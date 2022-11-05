@@ -10,14 +10,20 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - /home/mysql/data:/var/lib/mysql
+      - /home/mysql/data:/var/lib/mysql --user 1000
 
   spring_app:
-    image: achatproject
-    container_name: achatproject
+    image: amineazri/achatproject
+    container_name: relaxed_wozniak
     restart: on-failure
     ports:
       - 8089:8089
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/achatdb?createDatabaseIfNotExist=true&useUnicode=true&useSSL=false&allowPublicKeyRetrieval=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: achatdb
     depends_on:
       - mysqldb
 
