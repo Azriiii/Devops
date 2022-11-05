@@ -1,6 +1,12 @@
 
 pipeline {
-	agent any 
+	agent any
+	tools {
+            maven 'M2_HOME'
+        }
+        environment {
+            		DOCKERHUB_CREDENTIALS=credentials('dockerHub')
+            	}
 	stages{
 		stage('Checkout Git'){
             steps{
@@ -44,4 +50,20 @@ pipeline {
 
                                 }
 	}
+	stage('Building our image') {
+                steps {
+                    script {
+                        dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                    }
+                }
+            }
+            stage('Deploy our image') {
+                        steps {
+                            script {
+                                docker.withRegistry( '', registryCredential ) {
+                                    dockerImage.push()
+                                }
+                            }
+                        }
+                    }
 }

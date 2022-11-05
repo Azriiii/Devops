@@ -244,3 +244,165 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2022-11-05 17:14:54.405  INFO 16755 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-11-05 17:14:54.408  INFO 16755 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-11-05 17:14:54.423  INFO 16755 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-05 18:05:15.699  INFO 18740 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 18740 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 18:05:15.702  INFO 18740 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 18:05:16.522  INFO 18740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 18:05:16.586  INFO 18740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 10 JPA repository interfaces.
+2022-11-05 18:05:17.243  INFO 18740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 18:05:17.281  INFO 18740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 18:05:17.310  INFO 18740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 18:05:17.394  INFO 18740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 18:05:17.771  INFO 18740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 18:05:17.783  INFO 18740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 18:05:18.523  INFO 18740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 18:05:18.532  INFO 18740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 18:05:19.562  WARN 18740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 18:05:20.763  INFO 18740 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 5.408 seconds (JVM running for 6.775)
+2022-11-05 18:05:20.830  INFO 18740 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 18:05:20.833  INFO 18740 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 18:05:20.887  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@363bf9d
+2022-11-05 18:05:20.888  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 18:05:20.894  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@67f8586f
+2022-11-05 18:05:20.946  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@76e5d5e5
+2022-11-05 18:05:20.946  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b0709e7
+2022-11-05 18:05:20.946  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1e368085
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1703e50d
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4f1150f5
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6cfa20c1
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@46e2a773
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4ec1192f
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b926efa
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3653bb61
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@65595be7
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@23972e02
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3f60ba06
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@251d64d6
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4d96c290
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@17e96b3c
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2d63534d
+2022-11-05 18:05:20.947  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6316b9e3
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@186f7553
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@44835de9
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@734d870f
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2542e124
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4664cd32
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@18d6ac02
+2022-11-05 18:05:20.948  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@73c25e8
+2022-11-05 18:05:20.974  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@18e4bbec
+2022-11-05 18:05:20.981  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@30130a31
+2022-11-05 18:05:20.990  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67bf393c
+2022-11-05 18:05:20.990  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b31cd6b
+2022-11-05 18:05:20.990  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@19d85bbe
+2022-11-05 18:05:20.990  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7c6f91d2
+2022-11-05 18:05:20.991  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@628721ba
+2022-11-05 18:05:20.992  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67d8e214
+2022-11-05 18:05:20.993  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c0640fa
+2022-11-05 18:05:20.993  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c67b7a9
+2022-11-05 18:05:20.993  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67b6cb6e
+2022-11-05 18:05:20.993  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@47de4dce
+2022-11-05 18:05:20.993  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4951c45f
+2022-11-05 18:05:20.995  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@488ae823
+2022-11-05 18:05:20.996  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@19b6b7e7
+2022-11-05 18:05:20.998  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2c332922
+2022-11-05 18:05:20.998  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6b8773c7
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@74534564
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5876cd86
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6d398593
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3d70dab8
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@53e6c017
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3d123d10
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1ca6323c
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@27b89e0a
+2022-11-05 18:05:20.999  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@42bb0492
+2022-11-05 18:05:21.000  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6eed5b68
+2022-11-05 18:05:21.000  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4377b35b
+2022-11-05 18:05:21.000  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@67bf393c, com.esprit.examen.entities.Produit@b31cd6b, com.esprit.examen.entities.Produit@19d85bbe, com.esprit.examen.entities.Produit@7c6f91d2, com.esprit.examen.entities.Produit@628721ba, com.esprit.examen.entities.Produit@67d8e214, com.esprit.examen.entities.Produit@3c0640fa, com.esprit.examen.entities.Produit@3c67b7a9, com.esprit.examen.entities.Produit@67b6cb6e, com.esprit.examen.entities.Produit@47de4dce, com.esprit.examen.entities.Produit@4951c45f, com.esprit.examen.entities.Produit@488ae823, com.esprit.examen.entities.Produit@19b6b7e7, com.esprit.examen.entities.Produit@2c332922, com.esprit.examen.entities.Produit@6b8773c7, com.esprit.examen.entities.Produit@74534564, com.esprit.examen.entities.Produit@5876cd86, com.esprit.examen.entities.Produit@6d398593, com.esprit.examen.entities.Produit@3d70dab8, com.esprit.examen.entities.Produit@53e6c017, com.esprit.examen.entities.Produit@3d123d10, com.esprit.examen.entities.Produit@1ca6323c, com.esprit.examen.entities.Produit@27b89e0a, com.esprit.examen.entities.Produit@42bb0492, com.esprit.examen.entities.Produit@6eed5b68, com.esprit.examen.entities.Produit@4377b35b]
+2022-11-05 18:05:21.015  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6e6bb211
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5926f291
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5f0c04d2
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4ff1f872
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7c3920a7
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@12e5f7cb
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2df05bd1
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6d821475
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@588b2d7a
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@656dc20f
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4a6c33a0
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@37b0a724
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@36d1ac55
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3da76d3a
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@167da81d
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@24c6a471
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1fce17b8
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@190677c6
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@62c019bb
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7334dcbe
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1ca876b7
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@36ba9aa3
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@54d5500e
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1d1a706
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5e136445
+2022-11-05 18:05:21.016  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c9e82a6
+2022-11-05 18:05:21.034  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 18:05:21.035  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 26
+2022-11-05 18:05:21.041  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@7985c32f
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7475f071
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2116e9cf
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7a88e6a9
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7b91e3d4
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@20bc72af
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@36f2bfe6
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@bf2aa3f
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7f0977d6
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3ce34b92
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1f4dce67
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1f02ce3
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@35f34ccc
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@136a2e3b
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@62a5e4c7
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@62325b44
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4d08fee2
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@f511a8e
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@421f447f
+2022-11-05 18:05:21.056  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3287cf03
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3872c85f
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3f7030b5
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@774b798
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b079fa2
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@25198ead
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b52f723
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@39384ba6
+2022-11-05 18:05:21.057  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@e7529ac
+2022-11-05 18:05:21.073  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  count27
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@32441ed4
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3fc2197d
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5a429813
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@348b26e0
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@26ab3c1b
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@98dc042
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@47c14360
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2a90c15e
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@55a46bf3
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@324c3ed5
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7f5ba1bf
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@536d153b
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@25e01756
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@76093fa9
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@547d3e8e
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6f823df7
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4afdcdf6
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@75364777
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@48028e11
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@36117f63
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1227862a
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@55ed76e6
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@943184c
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@34949460
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1aac520e
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@24484dfb
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@35d8a046
+2022-11-05 18:05:21.107  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 27
+2022-11-05 18:05:21.112  INFO 18740 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 18:05:21.131  INFO 18740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 18:05:21.134  INFO 18740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 18:05:21.151  INFO 18740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
