@@ -34,7 +34,7 @@ pipeline {
                                 }
                                  stage('JUNIT') {
                                     steps {
-                                    sh 'mvn clean test -Dtest=com.esprit.examen.services.ProduiServiceImplTest -Dmaven.test.failure.ignore=true'
+                                    sh 'mvn test'
                                     }
                                 }
         stage('NEXUS'){
