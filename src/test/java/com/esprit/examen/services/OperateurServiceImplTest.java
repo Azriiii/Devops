@@ -1,4 +1,4 @@
-package com.esprit.examen.services;
+/*package com.esprit.examen.services;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,7 +28,7 @@ public class OperateurServiceImplTest {
             */
             //operateurServiceImlp.retrieveAllOperateurs();
             
-            Operateur operateur = operateurServiceImlp.retrieveOperateur((long) 1);
+     /*       Operateur operateur = operateurServiceImlp.retrieveOperateur((long) 1);
             operateur.setNom("Tijeni");
             operateurServiceImlp.updateOperateur(operateur);
             //operateurServiceImlp.deleteOperateur(operateur.getIdOperateur());
@@ -42,5 +42,6 @@ public class OperateurServiceImplTest {
 	}
 
 }
-	
+
+*/
 

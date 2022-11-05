@@ -1,4 +1,4 @@
-package com.esprit.examen.services;
+/*package com.esprit.examen.services;
 import com.esprit.examen.entities.DetailFacture;
 import com.esprit.examen.repositories.DetailFactureRepository;
 import org.junit.jupiter.api.*;
@@ -74,3 +74,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 }
+
+
+ */
