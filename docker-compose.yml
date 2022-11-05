@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   mysqldb:
@@ -14,8 +14,7 @@ services:
 
   spring_app:
     image: amineazri/achatproject
-    container_name: relaxed_wozniak
-    restart: on-failure
+    container_name: achatproject
     ports:
       - 8089:8089
     environment:
@@ -24,6 +23,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: root
       MYSQL_DATABASE: achatdb
+    restart: on-failure
+
     depends_on:
       - mysqldb
-

@@ -27,6 +27,16 @@ pipeline {
                 sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=amine'
             }			
         }
+        stage('MOCKITO') {
+                                    steps {
+                                   sh 'mvn clean test -Dtest=com.esprit.examen.services.ProduitServiceMockTest'
+                                    }
+                                }
+                                 stage('JUNIT') {
+                                    steps {
+                                    sh 'mvn clean test -Dtest=com.esprit.examen.services.ProduiServiceImplTest -Dmaven.test.failure.ignore=true'
+                                    }
+                                }
         stage('NEXUS'){
                                     steps{
                                         sh 'mvn deploy -DskipStaging=true '
