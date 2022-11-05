@@ -1,151 +1,4 @@
-2022-11-05 14:39:37.476  WARN 20466 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
-
-com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.3.jar:2.5.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.3.jar:2.5.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.3.jar:2.5.3]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.3.jar:2.5.3]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) ~[junit-platform-surefire-provider-1.0.1.jar:1.0.1]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) ~[junit-platform-surefire-provider-1.0.1.jar:1.0.1]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) ~[junit-platform-surefire-provider-1.0.1.jar:1.0.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	... 122 common frames omitted
-
-2022-11-05 14:39:37.478  INFO 20466 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-11-05 14:39:37.594  INFO 20466 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2022-11-05 14:39:38.598 ERROR 20466 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Exception during pool initialization.
+2022-11-05 16:17:54.817 ERROR 11835 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Exception during pool initialization.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -217,58 +70,37 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.9.jar:5.3.9]
 	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.9.jar:5.3.9]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.9.jar:5.3.9]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42) ~[junit-vintage-engine-4.12.1.jar:4.12.1]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[na:na]
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at java.base/java.util.Optional.orElseGet(Optional.java:369) ~[na:na]
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541) ~[na:na]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[na:na]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:83) ~[junit-vintage-engine-4.12.1.jar:4.12.1]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:74) ~[junit-vintage-engine-4.12.1.jar:4.12.1]
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) ~[junit-platform-launcher-1.0.1.jar:1.0.1]
@@ -278,20 +110,378 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) ~[surefire-booter-2.19.1.jar:2.19.1]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) ~[surefire-booter-2.19.1.jar:2.19.1]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
-	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
-	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+Caused by: java.net.UnknownHostException: mysqldb
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1378) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306) ~[na:na]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.46.jar:5.1.46]
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.46.jar:5.1.46]
-	... 121 common frames omitted
+	... 100 common frames omitted
 
-2022-11-05 14:39:38.598  WARN 20466 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
-2022-11-05 14:39:38.598 ERROR 20466 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+2022-11-05 16:17:54.819  WARN 11835 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2022-11-05 16:17:54.819 ERROR 11835 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2022-11-05 14:39:38.599 ERROR 20466 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
-2022-11-05 14:39:38.599  WARN 20466 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-05 16:17:54.820 ERROR 11835 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-05 16:17:54.821  WARN 11835 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-11-05 16:35:19.837  INFO 13367 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 13367 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 16:35:19.839  INFO 13367 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 16:35:20.755  INFO 13367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 16:35:20.824  INFO 13367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 10 JPA repository interfaces.
+2022-11-05 16:35:21.455  INFO 13367 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 16:35:21.520  INFO 13367 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 16:35:21.655  INFO 13367 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 16:35:21.766  INFO 13367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 16:35:22.230  INFO 13367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 16:35:22.243  INFO 13367 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 16:35:23.154  INFO 13367 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 16:35:23.164  INFO 13367 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 16:35:24.274  WARN 13367 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 16:35:25.537  INFO 13367 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 5.974 seconds (JVM running for 6.887)
+2022-11-05 16:35:25.602  INFO 13367 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 16:35:25.605  INFO 13367 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 16:35:25.763  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@343b3399
+2022-11-05 16:35:25.764  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 16:35:25.771  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@17287458
+2022-11-05 16:35:25.817  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@35e64c7b
+2022-11-05 16:35:25.848  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@70882cb7
+2022-11-05 16:35:25.853  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@f1b0658
+2022-11-05 16:35:25.858  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7b3db079
+2022-11-05 16:35:25.858  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6ef5e46a
+2022-11-05 16:35:25.858  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@7b3db079, com.esprit.examen.entities.Produit@6ef5e46a]
+2022-11-05 16:35:25.868  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@441a2d52
+2022-11-05 16:35:25.868  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@204b1903
+2022-11-05 16:35:25.888  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 16:35:25.888  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 2
+2022-11-05 16:35:25.892  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@15d18b61
+2022-11-05 16:35:25.903  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@14738629
+2022-11-05 16:35:25.903  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@eb1d7c8
+2022-11-05 16:35:25.903  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@150963fe
+2022-11-05 16:35:25.916  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  count3
+2022-11-05 16:35:25.951  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@47858d7c
+2022-11-05 16:35:25.951  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5a5cd0af
+2022-11-05 16:35:25.951  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@16cc5e51
+2022-11-05 16:35:25.951  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 3
+2022-11-05 16:35:25.956  INFO 13367 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 16:35:25.981  INFO 13367 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 16:35:25.984  INFO 13367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 16:35:26.006  INFO 13367 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-05 17:06:01.948  INFO 14185 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 14185 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 17:06:01.951  INFO 14185 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 17:06:03.060  INFO 14185 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 17:06:03.144  INFO 14185 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 10 JPA repository interfaces.
+2022-11-05 17:06:03.852  INFO 14185 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 17:06:03.927  INFO 14185 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 17:06:04.091  INFO 14185 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 17:06:04.227  INFO 14185 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 17:06:04.703  INFO 14185 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 17:06:04.718  INFO 14185 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 17:06:05.777  INFO 14185 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 17:06:05.785  INFO 14185 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:06:06.933  WARN 14185 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 17:06:08.449  INFO 14185 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 6.789 seconds (JVM running for 7.757)
+2022-11-05 17:06:08.516  INFO 14185 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:06:08.521  INFO 14185 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:06:08.678  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@6a063931
+2022-11-05 17:06:08.679  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 17:06:08.688  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@354a1239
+2022-11-05 17:06:08.738  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@70ca533a
+2022-11-05 17:06:08.738  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6945fdb8
+2022-11-05 17:06:08.738  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@627dfd9f
+2022-11-05 17:06:08.738  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@35e64c7b
+2022-11-05 17:06:08.773  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@7ec63b9a
+2022-11-05 17:06:08.778  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@61ee9672
+2022-11-05 17:06:08.784  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6984f7d1
+2022-11-05 17:06:08.784  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7fac3ce0
+2022-11-05 17:06:08.785  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3e3b41cb
+2022-11-05 17:06:08.785  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@14bb16ee
+2022-11-05 17:06:08.785  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5acf51d7
+2022-11-05 17:06:08.785  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@6984f7d1, com.esprit.examen.entities.Produit@7fac3ce0, com.esprit.examen.entities.Produit@3e3b41cb, com.esprit.examen.entities.Produit@14bb16ee, com.esprit.examen.entities.Produit@5acf51d7]
+2022-11-05 17:06:08.800  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@28833fff
+2022-11-05 17:06:08.801  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5fd0235c
+2022-11-05 17:06:08.801  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6e1d939e
+2022-11-05 17:06:08.801  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@56929ce
+2022-11-05 17:06:08.802  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7bb6a1f4
+2022-11-05 17:06:08.823  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 17:06:08.823  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 5
+2022-11-05 17:06:08.831  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@5de15ce1
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7a68818c
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@11034fdb
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@276ae21c
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1a524c6b
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2408ca4c
+2022-11-05 17:06:08.842  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2f7e2481
+2022-11-05 17:06:08.855  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  count6
+2022-11-05 17:06:08.887  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@276ac94c
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5ccc07ae
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@ab5e63
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6a434cdd
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b12c870
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@27df4dcb
+2022-11-05 17:06:08.888  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 6
+2022-11-05 17:06:08.892  INFO 14185 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 17:06:08.919  INFO 14185 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:06:08.922  INFO 14185 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 17:06:08.948  INFO 14185 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-05 17:07:05.311  INFO 15088 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 15088 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 17:07:05.315  INFO 15088 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 17:07:06.328  INFO 15088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 17:07:06.413  INFO 15088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 10 JPA repository interfaces.
+2022-11-05 17:07:07.225  INFO 15088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 17:07:07.292  INFO 15088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 17:07:07.401  INFO 15088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 17:07:07.491  INFO 15088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 17:07:07.850  INFO 15088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 17:07:07.863  INFO 15088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 17:07:08.701  INFO 15088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 17:07:08.708  INFO 15088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:07:09.825  WARN 15088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 17:07:11.274  INFO 15088 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 6.273 seconds (JVM running for 7.233)
+2022-11-05 17:07:11.356  INFO 15088 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:07:11.361  INFO 15088 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:07:11.482  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@343b3399
+2022-11-05 17:07:11.483  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 17:07:11.488  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@17287458
+2022-11-05 17:07:11.524  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@51f91d19
+2022-11-05 17:07:11.524  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5ce593bc
+2022-11-05 17:07:11.524  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5b6789cf
+2022-11-05 17:07:11.524  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@70882cb7
+2022-11-05 17:07:11.525  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6980e66a
+2022-11-05 17:07:11.525  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1988e095
+2022-11-05 17:07:11.525  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7ec63b9a
+2022-11-05 17:07:11.554  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@10cb1b89
+2022-11-05 17:07:11.558  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@441a2d52
+2022-11-05 17:07:11.563  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@16745ba7
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@c9518ee
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2d094add
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3868c92e
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5fd0235c
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6e1d939e
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@56929ce
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7bb6a1f4
+2022-11-05 17:07:11.564  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@16745ba7, com.esprit.examen.entities.Produit@c9518ee, com.esprit.examen.entities.Produit@2d094add, com.esprit.examen.entities.Produit@3868c92e, com.esprit.examen.entities.Produit@5fd0235c, com.esprit.examen.entities.Produit@6e1d939e, com.esprit.examen.entities.Produit@56929ce, com.esprit.examen.entities.Produit@7bb6a1f4]
+2022-11-05 17:07:11.573  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2fba15c5
+2022-11-05 17:07:11.573  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7ae5f795
+2022-11-05 17:07:11.573  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2787abe4
+2022-11-05 17:07:11.574  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3e94a6f6
+2022-11-05 17:07:11.574  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@41ff98dc
+2022-11-05 17:07:11.574  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@14738629
+2022-11-05 17:07:11.574  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@eb1d7c8
+2022-11-05 17:07:11.574  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@150963fe
+2022-11-05 17:07:11.588  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 17:07:11.588  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 8
+2022-11-05 17:07:11.592  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@2f5a23c1
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@48a2fb11
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5fc82de5
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@65208c91
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4d71476c
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@125447a0
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@cede70a
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6dc8a602
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2a45c6f0
+2022-11-05 17:07:11.603  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1a9cfd5f
+2022-11-05 17:07:11.615  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  count9
+2022-11-05 17:07:11.646  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@f41db7f
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4df8f4e9
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7785430c
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@13056efe
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@121ec5c2
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@184b24d4
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@450b99f2
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7dc16d33
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1915879c
+2022-11-05 17:07:11.647  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 9
+2022-11-05 17:07:11.652  INFO 15088 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 17:07:11.674  INFO 15088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:07:11.676  INFO 15088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 17:07:11.695  INFO 15088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-05 17:08:11.397  INFO 15209 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 15209 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 17:08:11.399  INFO 15209 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 17:08:12.370  INFO 15209 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 17:08:12.448  INFO 15209 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 10 JPA repository interfaces.
+2022-11-05 17:08:13.303  INFO 15209 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 17:08:13.343  INFO 15209 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 17:08:13.377  INFO 15209 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 17:08:13.468  INFO 15209 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 17:08:13.842  INFO 15209 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 17:08:13.855  INFO 15209 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 17:08:14.649  INFO 15209 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 17:08:14.665  INFO 15209 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:08:15.793  WARN 15209 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 17:08:17.236  INFO 15209 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 6.193 seconds (JVM running for 7.665)
+2022-11-05 17:08:17.307  INFO 15209 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:08:17.310  INFO 15209 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:08:17.373  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@79fc6651
+2022-11-05 17:08:17.374  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 17:08:17.380  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@2d28114b
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3aaeb65b
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@25f688d5
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b1434ce
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3b96ea23
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@74c58f64
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@65640109
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5feceb2f
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5327c503
+2022-11-05 17:08:17.419  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b41ceac
+2022-11-05 17:08:17.420  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4ee8ea84
+2022-11-05 17:08:17.452  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@10c95d9b
+2022-11-05 17:08:17.458  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@7734695d
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1100363d
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7d593bbc
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@788be73c
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@65018381
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@75a0e0c2
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4190b111
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@66851c18
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@ff186c2
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7d25d10e
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3979ff82
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@77524169
+2022-11-05 17:08:17.467  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@1100363d, com.esprit.examen.entities.Produit@7d593bbc, com.esprit.examen.entities.Produit@788be73c, com.esprit.examen.entities.Produit@65018381, com.esprit.examen.entities.Produit@75a0e0c2, com.esprit.examen.entities.Produit@4190b111, com.esprit.examen.entities.Produit@66851c18, com.esprit.examen.entities.Produit@ff186c2, com.esprit.examen.entities.Produit@7d25d10e, com.esprit.examen.entities.Produit@3979ff82, com.esprit.examen.entities.Produit@77524169]
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@47511582
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@736de3b6
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@20fdf45a
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@74876292
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3bb59485
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@27d9a016
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@68c9cf93
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2715b3ea
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@30130a31
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5aa0d535
+2022-11-05 17:08:17.478  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7cb32ca5
+2022-11-05 17:08:17.507  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 17:08:17.508  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 11
+2022-11-05 17:08:17.511  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@72378bfd
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@248227db
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@fb69ab1
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5ac3c6cd
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@9223122
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c2b7322
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7731504
+2022-11-05 17:08:17.524  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@43c25e89
+2022-11-05 17:08:17.525  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5b71ccf2
+2022-11-05 17:08:17.525  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c2406dd
+2022-11-05 17:08:17.525  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@23e0ef68
+2022-11-05 17:08:17.525  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7207cb8b
+2022-11-05 17:08:17.525  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@27449f65
+2022-11-05 17:08:17.541  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  count12
+2022-11-05 17:08:17.583  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3872c85f
+2022-11-05 17:08:17.583  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3f7030b5
+2022-11-05 17:08:17.583  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@774b798
+2022-11-05 17:08:17.583  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b079fa2
+2022-11-05 17:08:17.583  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@25198ead
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b52f723
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@39384ba6
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@e7529ac
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6770a229
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6b17aa0b
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1009a9b4
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3796ca50
+2022-11-05 17:08:17.584  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 12
+2022-11-05 17:08:17.590  INFO 15209 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 17:08:17.614  INFO 15209 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:08:17.616  INFO 15209 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 17:08:17.637  INFO 15209 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-05 17:08:30.257  INFO 15290 --- [main] c.e.e.services.ProduitServiceImplTest    : Starting ProduitServiceImplTest using Java 11.0.17 on localhost.localdomain with PID 15290 (started by Amine in /home/Amine/Desktop/tpAchatProjet)
+2022-11-05 17:08:30.260  INFO 15290 --- [main] c.e.e.services.ProduitServiceImplTest    : No active profile set, falling back to default profiles: default
+2022-11-05 17:08:31.241  INFO 15290 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-05 17:08:31.309  INFO 15290 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2022-11-05 17:08:32.122  INFO 15290 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-05 17:08:32.170  INFO 15290 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-05 17:08:32.214  INFO 15290 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-05 17:08:32.321  INFO 15290 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-05 17:08:32.738  INFO 15290 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-05 17:08:32.751  INFO 15290 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-05 17:08:33.555  INFO 15290 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-05 17:08:33.582  INFO 15290 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:08:34.661  WARN 15290 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-05 17:08:35.982  INFO 15290 --- [main] c.e.e.services.ProduitServiceImplTest    : Started ProduitServiceImplTest in 6.112 seconds (JVM running for 7.432)
+2022-11-05 17:08:36.041  INFO 15290 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:08:36.044  INFO 15290 --- [scheduling-1] c.e.examen.services.StockServiceImpl     : 
+2022-11-05 17:08:36.110  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@79fc6651
+2022-11-05 17:08:36.111  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit : Telephone
+2022-11-05 17:08:36.117  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@2d28114b
+2022-11-05 17:08:36.164  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3aaeb65b
+2022-11-05 17:08:36.164  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@25f688d5
+2022-11-05 17:08:36.164  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b1434ce
+2022-11-05 17:08:36.164  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3b96ea23
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@74c58f64
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@65640109
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5feceb2f
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5327c503
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b41ceac
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4ee8ea84
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@76e5d5e5
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1b0709e7
+2022-11-05 17:08:36.165  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4f1150f5
+2022-11-05 17:08:36.202  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit com.esprit.examen.entities.Produit@44835de9
+2022-11-05 17:08:36.207  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@1100363d
+2022-11-05 17:08:36.214  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@66851c18
+2022-11-05 17:08:36.214  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@ff186c2
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7d25d10e
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3979ff82
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@77524169
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@74161ed7
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@27e80cfa
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@519b726a
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@34272839
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@708378cc
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@17eb35fa
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1d691d4f
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@1082883b
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7b2cd7ff
+2022-11-05 17:08:36.215  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit [com.esprit.examen.entities.Produit@66851c18, com.esprit.examen.entities.Produit@ff186c2, com.esprit.examen.entities.Produit@7d25d10e, com.esprit.examen.entities.Produit@3979ff82, com.esprit.examen.entities.Produit@77524169, com.esprit.examen.entities.Produit@74161ed7, com.esprit.examen.entities.Produit@27e80cfa, com.esprit.examen.entities.Produit@519b726a, com.esprit.examen.entities.Produit@34272839, com.esprit.examen.entities.Produit@708378cc, com.esprit.examen.entities.Produit@17eb35fa, com.esprit.examen.entities.Produit@1d691d4f, com.esprit.examen.entities.Produit@1082883b, com.esprit.examen.entities.Produit@7b2cd7ff]
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5e59844f
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@28cfbcc
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67bf393c
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@b31cd6b
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@19d85bbe
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7c6f91d2
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@628721ba
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67d8e214
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c0640fa
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c67b7a9
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@67b6cb6e
+2022-11-05 17:08:36.228  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@47de4dce
+2022-11-05 17:08:36.229  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4951c45f
+2022-11-05 17:08:36.229  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@488ae823
+2022-11-05 17:08:36.249  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : Produit added : Tele
+2022-11-05 17:08:36.249  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : size produit : : 14
+2022-11-05 17:08:36.255  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :com.esprit.examen.entities.Produit@3b4a77be
+2022-11-05 17:08:36.268  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4a7b42db
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6e6bb211
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5926f291
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5f0c04d2
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4ff1f872
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7c3920a7
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@12e5f7cb
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@2df05bd1
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@6d821475
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@588b2d7a
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@656dc20f
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4a6c33a0
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@37b0a724
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@36d1ac55
+2022-11-05 17:08:36.269  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3da76d3a
+2022-11-05 17:08:36.285  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  count15
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@35ec675e
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@75b57ecd
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@591be976
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@520f1862
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@40f53ea
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5a1216b0
+2022-11-05 17:08:36.323  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5c4404dd
+2022-11-05 17:08:36.325  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@76a2db3f
+2022-11-05 17:08:36.325  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@8cc5602
+2022-11-05 17:08:36.325  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@4221663d
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3ebfe048
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@5e24af83
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@34329e03
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@7d6b0636
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   :  Produit : com.esprit.examen.entities.Produit@3c971473
+2022-11-05 17:08:36.326  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : size2 15
+2022-11-05 17:08:36.332  INFO 15290 --- [main] c.e.examen.services.ProduitServiceImpl   : produit :null
+2022-11-05 17:08:36.351  INFO 15290 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-05 17:08:36.354  INFO 15290 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-05 17:08:36.366  INFO 15290 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
