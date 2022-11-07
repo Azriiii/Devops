@@ -10,7 +10,7 @@ pipeline {
             		dockerImage = ''
             	}
 	stages{
-		stage('Clone Code from vsc'){
+		stage('Cloning Code){
             steps{
                 echo 'Pulling...';
                 git branch: 'main',
