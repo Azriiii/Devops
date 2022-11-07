@@ -10,7 +10,7 @@ pipeline {
             		dockerImage = ''
             	}
 	stages{
-		stage('Declarative: Checkout Scm'){
+		stage('Clone Code from vsc'){
             steps{
                 echo 'Pulling...';
                 git branch: 'main',
@@ -75,14 +75,14 @@ pipeline {
                         }
                     }
 
-/*stage('Declarative: Post Actions') {
+stage('Post Actions : Mailing') {
 
             steps {
                 sh "docker rmi $registry:$BUILD_NUMBER"
             }
         }
 
-*/
+}
 }
 post {
         always {
