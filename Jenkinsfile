@@ -5,10 +5,12 @@ pipeline {
             maven 'M2_HOME'
         }
         environment {
-            		DOCKERHUB_CREDENTIALS=credentials('dockerHub')
+            		registry = "amineazri/achatproject"
+            		registryCredential = 'dockerHub'
+            		dockerImage = ''
             	}
 	stages{
-		stage('Checkout Git'){
+		stage('Declarative: Checkout Scm'){
             steps{
                 echo 'Pulling...';
                 git branch: 'main',
@@ -16,48 +18,54 @@ pipeline {
             }			
         }
 		
-		stage('MVN CLEAN'){
+		stage('Build'){
             steps{
-                sh 'mvn clean'
+                sh 'mvn clean install'
             }			
         }
 		
-		stage('MVN COMPILE'){
+		stage('Compile'){
             steps{
                 sh 'mvn compile'
             }	
     	}
 			
-		stage('MVN SONARQUBE'){
+		stage('SonarQube Analysis'){
             steps{
                 sh 'mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=amine'
             }			
         }
-        stage('MOCKITO') {
+        stage('Test: Mocktio') {
                                     steps {
                                    sh 'mvn clean test -Dtest=com.esprit.examen.services.ProduitServiceMockTest'
                                     }
                                 }
-                                 stage('JUNIT') {
+                                 stage('Test: Junit') {
                                     steps {
                                     sh 'mvn test'
                                     }
                                 }
-        stage('NEXUS'){
+        stage('Nexus'){
                                     steps{
                                         sh 'mvn deploy -DskipStaging=true '
                                     }
 
                                 }
-	}
-	stage('Building our image') {
+	stage('Starting Container') {
+                 steps {
+                    sh  'docker-compose -v'
+                    sh 'docker-compose up -d '
+                    sh 'docker-compose ps'
+          }
+            }
+	stage('Building Docker Image') {
                 steps {
                     script {
                         dockerImage = docker.build registry + ":$BUILD_NUMBER"
                     }
                 }
             }
-            stage('Deploy our image') {
+            stage('Deploying Docker Image') {
                         steps {
                             script {
                                 docker.withRegistry( '', registryCredential ) {
@@ -66,4 +74,30 @@ pipeline {
                             }
                         }
                     }
+
+/*stage('Declarative: Post Actions') {
+
+            steps {
+                sh "docker rmi $registry:$BUILD_NUMBER"
+            }
+        }
+
+}*/
+post {
+        always {
+            echo 'This will always run'
+        }
+        success {
+            mail to: "amine.azri@esprit.tn",
+                     subject: "Success",
+                     body: "Succes on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER} "
+        }
+        failure {
+                    mail to: "amine.azri@esprit.tn",
+                     subject: "Failure",
+                     body: "Failure on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER}, Build URL: ${env.BUILD_URL} "
+                }
+
+
+    }
 }
