@@ -10,7 +10,7 @@ pipeline {
             		dockerImage = ''
             	}
 	stages{
-		stage('Cloning Code){
+		stage('Cloning Code'){
             steps{
                 echo 'Pulling...';
                 git branch: 'main',
